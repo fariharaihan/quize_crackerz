@@ -11,7 +11,9 @@ const Statistic = () => {
             <div>
                 <h1 className=' text-3xl font-semibold text-white '>LineChart</h1>
             </div>
-            <div className='text-black font-semibold  bg-sky-100 m-7 py-16 flex justify-center'>
+            <div className='text-black font-semibold  bg-sky-100 lg:m-7 md:m-7 py-16 flex justify-center sm:w-100 '>
+
+
 
                 <LineChart
                     width={500}
@@ -27,8 +29,11 @@ const Statistic = () => {
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 </LineChart>
 
+
+
+
             </div>
-        </div>
+        </div >
     );
 };
 

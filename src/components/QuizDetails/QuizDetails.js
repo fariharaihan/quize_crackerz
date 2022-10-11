@@ -1,37 +1,39 @@
 import React from 'react';
 import QuizOption from '../QuizOption/QuizOption';
-import { EyeIcon } from '@heroicons/react/24/solid'
+import { toast } from 'react-toastify';
+
 
 const QuizDetails = ({ quizTopic }) => {
     console.log(quizTopic)
-    const { question, options } = quizTopic
+    const { question, correctAnswer, options, id } = quizTopic
+
+
+
+    const handleAns = (correct) => {
+        if (correct === correctAnswer) {
+            toast.success('Curert answer', { autoClose: 500 })
+        }
+        else {
+            toast.warning('Incorrent answer!', { autoClose: 500 })
+        }
+    }
     return (
-        <div className='border-4 border-sky-300 rounded-md text-white py-5'>
-            <div className=''>
-                <button className='flex'><EyeIcon className="h-6 w-6 text-blue-500 ml-2" /></button>
-                <p>{question}</p>
+        <div className='border-4 border-sky-500 rounded-md text-white py-5'>
+            <div className='question-section'>
+                {/* <div className='question-count'>
+                    <span>Question</span>
+                </div> */}
+                <div className='flex justify-between px-5'>
+                    <h1 className='text-2xl text-white'>Question : {question}</h1>
 
-            </div>
-            {/* <p>{correctAnswer}</p> */}
-
-            <div className='grid grid-cols-2 mt-3'>
-                <div >
-                    <p>{options[0]}</p>
-                </div>
-                <div>
-                    <p>{options[1]}</p>
-                </div>
-                <div>
-                    <p>{options[2]}</p>
-                </div>
-                <div>
-                    <p>{options[3]}</p>
                 </div>
             </div>
+
             <div >
                 {
                     quizTopic.options.map(quiz => <QuizOption
                         key={quiz.id}
+                        handleAns={handleAns}
                         quiz={quiz}></QuizOption>)
                 }
             </div>

@@ -1,12 +1,14 @@
 import React from 'react';
 
-const QuizOption = ({ quiz }) => {
-    const { correctAnswer } = quiz
+const QuizOption = ({ quiz, handleAns }) => {
+
     // console.log(quiz)
     return (
         <div>
-            <p>{correctAnswer}</p>
+            <button onClick={() => handleAns(quiz)} className='btn px-10 mt-5 border-2 border-black bg-indigo-200 text-gray-600'>{quiz}</button>
+
         </div>
+
     );
 };
 

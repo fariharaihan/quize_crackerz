@@ -19,6 +19,8 @@ const NavBar = () => {
                     </nav>
                 </div>
             </header>
+
+
         </div>
 
     );

@@ -11,6 +11,7 @@ const Header = () => {
                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Play a Quiz for Free!</h3>
                             <span className="text-xs text-white">October 12, 2022</span>
                             <p>When you're playing a quiz you have to keep your mind on what you are doing. So it is very important.</p>
+                            <h3 className="text-xl font-medium sm:text-2xl ">Are you ready for quiz test?</h3>
                         </div>
                     </a>
                     <div >
