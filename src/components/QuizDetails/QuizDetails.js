@@ -2,7 +2,7 @@ import React from 'react';
 import QuizOption from '../QuizOption/QuizOption';
 
 const QuizDetails = ({ quizTopic }) => {
-    console.log(quizTopic)
+    // console.log(quizTopic)
     const { question, correctAnswer } = quizTopic
     return (
         <div className='border-4 border-sky-300 rounded-md'>
