@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Home from '../Home/Home';
 
 const TopicsDetails = ({ topic }) => {
-    const { name, logo, total } = topic;
+    const { id, name, logo, total } = topic;
     return (
 
         <div className=''>
@@ -14,8 +15,8 @@ const TopicsDetails = ({ topic }) => {
                         <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
                         <p className="text-gray-900">Total:{total}</p>
                     </div>
-                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-blue-300
-                 text-gray-900">Start</button>
+                    <Link to={`/topic/${id}`}> <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-blue-300
+                 text-gray-900">Start</button></Link>
                 </div>
             </div>
         </div>
