@@ -1,26 +1,21 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 const Statistic = () => {
-    const statistics = useLoaderData()
-    console.log(statistics.data)
+    const statistics = useLoaderData();
+    // console.log(statistics.data)
     return (
         <div>
             <div>
                 <h1 className=' text-3xl font-semibold text-white '>LineChart</h1>
             </div>
-            <div className='text-black font-semibold  bg-sky-100 lg:m-7 md:m-7 py-16 flex justify-center sm:w-100 '>
-
-
-
+            <div className='text-black font-semibold  bg-sky-100 lg:m-7 md:m-7 py-16 flex justify-center'>
                 <LineChart
-                    width={500}
+                    width={400}
                     height={300}
-                    data={statistics.data}
+                    data={statistics.data}>
 
-                >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
@@ -28,10 +23,6 @@ const Statistic = () => {
 
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 </LineChart>
-
-
-
-
             </div>
         </div >
     );

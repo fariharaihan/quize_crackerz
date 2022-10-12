@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 
 const NavBar = () => {
@@ -27,8 +27,6 @@ const NavBar = () => {
                     </span>
                 </div>
             </header>
-
-
         </div>
 
     );

@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Home from '../Home/Home';
+
 
 const TopicsDetails = ({ topic }) => {
     const { id, name, logo, total } = topic;
     return (
-
-        <div className=''>
-
+        <div>
             <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-gray-900 mb-5">
                 <img src={logo} alt="" className="object-cover object-center w-full roundedi-md h-72 border" />
                 <div className="flex flex-col justify-between p-6 space-y-8 bg-white">

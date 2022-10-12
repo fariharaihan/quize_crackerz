@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import TopicsDetails from '../TopicsDetails/TopicsDetails';
 
 const Topic = () => {
-    const topics = useLoaderData()
+    const topics = useLoaderData();
     // console.log(topics.data)
     return (
         <div>

@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import TopicsDetails from '../TopicsDetails/TopicsDetails';
 
 const Home = () => {
-    const topics = useLoaderData()
+    const topics = useLoaderData();
     return (
         <div>
             <Header></Header>

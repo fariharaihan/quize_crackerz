@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Some important informetion about my site (Quiz-Class)
+
+1. This site is very simple and easy to learn. On the otherhand it is very helpful to them who wants to participate a quiz test.
+
+2. This site has some routes on navbar. If you click on it, the routes takes you to another page.
+
+3. In topic page there are some cards. If you click on the card the quiz comes in another route.
+
+4. After clicking quiz test button, a route takes you to the router. There are many quizes in the route.
+
+5. Here I use toast to show correct and incorrect answer. It shows (correct answer)  ones that are correct and shows (incorrect answer) ones that are incorrect.
+
+6. On the quiz part I use a Eyeicon. If you click this icon you get correct answer.
+
+7. In statistic page there is a simple line chat. It helps to understand  about quiz quentity.

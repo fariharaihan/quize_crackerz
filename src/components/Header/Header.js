@@ -14,9 +14,6 @@ const Header = () => {
                             <h3 className="text-xl font-medium sm:text-2xl ">Are you ready for quiz test?</h3>
                         </div>
                     </a>
-                    <div >
-
-                    </div>
                 </div>
             </section>
         </div>

@@ -4,11 +4,9 @@ import { toast } from 'react-toastify';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 
 
-
 const QuizDetails = ({ quizTopic }) => {
     const [open, setOpen] = useState(true);
     const { question, correctAnswer } = quizTopic;
-
 
 
     const handleAns = (correct) => {
@@ -18,11 +16,12 @@ const QuizDetails = ({ quizTopic }) => {
         else {
             toast.warning('Incorrent answer!', { autoClose: 700 })
         }
-    }
+    };
+
+
     return (
         <div className='border-4 border-sky-400 rounded-md text-white py-5'>
             <div className='question-section'>
-
                 <div className='flex justify-between'>
                     <h1 className='text-2xl text-white ml-10'>Question : {question}</h1>
 
@@ -36,9 +35,7 @@ const QuizDetails = ({ quizTopic }) => {
                         {correctAnswer}
                     </h1>
                 </div>
-
             </div>
-
             <div >
                 {
                     quizTopic.options.map(quiz => <QuizOption
